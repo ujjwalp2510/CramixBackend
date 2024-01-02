@@ -13,7 +13,7 @@ const sendOTPEmail = async (email, otp) => {
       from: 'official.cramix@gmail.com',
       to: email,
       subject: 'Cramix Account Verification',
-      text: `Hello,\n\nThank you for choosing Cramix! To complete your account setup, please use the following one-time password (OTP):\n\nYour OTP: ${otp}\n\nIf you encounter any issues or have questions, feel free to contact our support team.\n\nWelcome to Cramix - your last-minute exam preparation companion! At Cramix, we understand the challenges of college life, and our mission is to provide you with a stress-free platform for last-minute preparation. Pass your exams without worries and enjoy the journey of learning!\n\nBest regards,\nThe Cramix Team`,
+      text: `Hello,\n\nThank you for choosing Cramix - your last-minute exam preparation companion! To complete your account setup, please use the following one-time password (OTP):\n\nYour OTP: ${otp}\n\nAt Cramix, we understand the challenges of college life, and our mission is to provide you with a stress-free platform for last-minute preparation. Pass your exams without worries and enjoy the journey of learning!\n\nIf you encounter any issues or have questions, feel free to contact our support team.\n\nBest regards,\nThe Cramix Team`,
     };
     
     await transporter.sendMail(mailOptions);
